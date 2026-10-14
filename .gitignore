@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+.env
+.env.*
+backend/firebase/firebase_key.json
+backend/firebse/firebase_key.json
+FACE_MODULE/Arduino/esp32_cam/esp32_cam/secrets.h
+
+combined_attendance.csv
+face_log.csv
+rfid_log.csv
+RFID_MODULE/Python/rfid_database.csv
+FACE_MODULE/Dataset/
+FACE_MODULE/Models/
+SNN_MODULE/Models/
+
+ALL DOCX/

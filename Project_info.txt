@@ -1,0 +1,208 @@
+okay wait i think i need tell you exactly what i need
+let keep the current works in mind and carefully see what I'm trying to say
+
+i will from back to core
+
+i need a frontend like dashboard or something in that i need all basic stuff that is necessary for this project and i need it to connect with firebase so that if i need to add new student then i can add and  also it should connect with the main.py which integrates rfid , face and snn final code 
+
+basically i need the frontend has to connect with the firebase and main.py code in vs code for final presentation first i need to run that main.py and then run frontend that both will get connected and i can do all the thing in frontend itself like:
+1. adding a new student
+2. marking attendance with rfid and face 
+3. making edit in the id of student information and rfid id if needed
+4. adding that new student image for face attendance verification 
+5. and to run attendance stuff 
+6. i need to flow be like for attendance there should be a button called start marking attendance for today something like that if i click that first their should be an animation like tap your rfid card after tapping it should give other animation of saying for face capturing once its done the attendance should get mark if the logic is correct as we are doing the code for that and it should continue until i press the close attendance for that also i need a button.
+7. after closing the attendance it should automatically redirect to snn page to see today attendance anomaly score what anomaly have been detected that all as i already said in before instructions 
+
+
+and the codes needed for this all should be in separate folders for each rfid , face and snn and that all should combine with main.py code 
+
+i need that frontend to be perfect , professional and more reliable and responsive
+
+
+
+hope you understood what exactly i need in this project and also i think your clear with the rfid , face and snn logics 
+
+by today night i need to complete at least till creating frontend , connecting all three modules together , and test the working of the frontend and also the snn training part 
+
+basically i need to complete my project 90% by end of the day 
+
+and now i need you to give me a instruction for this project and for what i need now , what will be next step to do and also hope i you the current stage of the project 
+
+wait i think i'm delaying in the progress and wasting the time because of the damn frontend 
+
+is that okay to completely remove that frontend part and do all the needed frontend part in terminal itself is that okay to do 
+
+i don't want a dashboard or webpage shits now i just need a one file that integrates rfid module folder , face module folder and snn module folder so that i don't have to run multiple codes while demo this is the main goal can i do it by today night before 11:00 p.m. 
+
+is that okay to do now
+
+
+i need a frontend like dashboard or something in that i need all basic stuff that is necessary for this project and i need it to connect with firebase so that if i need to add new student then i can add and  also it should connect with the main.py which integrates rfid , face and snn final code 
+
+basically i need the frontend has to connect with the firebase and main.py code in vs code for final presentation first i need to run that main.py and then run frontend that both will get connected and i can do all the thing in frontend itself like:
+1. adding a new student
+2. marking attendance with rfid and face 
+3. making edit in the id of student information and rfid id if needed
+4. adding that new student image for face attendance verification 
+5. and to run attendance stuff 
+6. i need to flow be like for attendance there should be a button called start marking attendance for today something like that if i click that first their should be an animation like tap your rfid card after tapping it should give other animation of saying for face capturing once its done the attendance should get mark if the logic is correct as we are doing the code for that and it should continue until i press the close attendance for that also i need a button.
+7. after closing the attendance it should automatically redirect to snn page to see today attendance anomaly score what anomaly have been detected that all as i already said in before instructions 
+
+
+and the codes needed for this all should be in separate folders for each rfid , face and snn and that all should combine with main.py code 
+
+i need that frontend to be perfect , professional and more reliable and responsive
+
+this is thing i tried to do combine this with the current progress and give the step by step action that can be done in this also in this project the main part is snn still we didn't touch that part of training snn 
+
+
+SNN-ATTENDANCE/
+│
+├── backend/
+|   |--- firebase/
+           |--- firebase_key.json
+│   ├── main.py              👈 MASTER CONTROLLER (IMPORTANT)
+│   ├── api/                 👈 FastAPI routes
+│   │     ├── students.py
+│   │     ├── attendance.py
+│   │     ├── session.py
+│   |     |--- rfid.py
+|   │     |--- __init__.py
+│   ├── services/
+│   │     ├── rfid_service.py
+│   │     ├── face_service.py
+│   │     ├── snn_service.py
+│   │     ├── firebase_service.py
+│   │     |--- __init__.py
+│   ├── core/
+│   │     ├── session_manager.py   👈 VERY IMPORTANT
+│   │     ├── state.py             👈 controls workflow
+│   │     |--- __init__.py
+│   ├── config.py
+│   |--- __init__.py
+├── frontend/ (React + Firebase)
+│   ├── dashboard
+│   ├── student management
+│   ├── attendance control panel
+│   ├── anomaly analytics (SNN results)
+│
+├── FACE_MODULE/
+├── RFID_MODULE/
+├── SNN_MODULE/
+
+
+
+
+
+orchestrates
+
+You simply run
+
+python main.py
+
+Console:
+
+====================================
+ SNN ATTENDANCE SYSTEM
+====================================
+
+Waiting for RFID...
+
+Student taps RFID
+
+RFID detected
+
+Student:
+Gayathri R
+ID: E0224030
+
+Opening Camera...
+
+Camera recognizes face
+
+Face Verified
+
+Similarity : 97.4%
+
+Attendance Marked
+
+Uploading to Firebase...
+Done
+
+Running SNN...
+Normal Behaviour
+
+Attendance Successful
+
+
+python main.py
+You can even make it menu driven
+=====================================
+RFID + FACE + SNN ATTENDANCE SYSTEM
+=====================================
+
+1. Register Student
+2. Start Attendance
+3. Train SNN
+4. View Attendance
+5. Exit
+
+Choice :
+
+We can even register students from the terminal
+Enter Name :
+Gayathri R
+
+Student ID :
+E0224030
+
+Department :
+CSE
+
+Year :
+3
+
+Scan RFID...
+
+RFID Saved
+
+Capture Face...
+
+Face Saved
+
+Student Registered Successfully
+
+No webpage required.
+
+Then Start Attendance
+Waiting for RFID...
+
+RFID Found
+
+Student:
+Gayathri
+
+Opening Camera...
+
+Face Verified
+
+Attendance Marked
+
+Running SNN...
+
+Normal
+
+Attendance Saved
+Then Training
+Training SNN...
+
+Loading Dataset...
+
+Epoch 1
+
+Epoch 2
+
+...
+
+Model Saved

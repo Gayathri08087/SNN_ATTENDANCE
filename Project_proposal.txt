@@ -1,0 +1,43 @@
+PROJECT PROPOSAL
+
+SNN-Based Anomaly Detection and Threat Assignment 
+
+The Internet of Medical Things or IoMT is a system that connects devices and healthcare systems. This helps doctors and nurses to monitor patients in time and provide better care. However IoMT also has some security problems, such as people getting into the system without permission malware attacks and data leaks. The old ways of keeping IoMT use a lot of power and energy which can hurt the network and make it not work as well.
+
+To fix these problems we are proposing a system that uses a Spiking Neural Network or SNN to find anomalies and assign threats. SNNs work like the neurons in our brains sending information in spikes. This makes them really good at processing information and using less energy, which is perfect for healthcare networks that need to work in real time.
+
+Problem Statement
+
+The security systems we have now for IoMT are not good at finding anomalies responding to threats or using energy efficiently. We need a security system that's lightweight and can find unusual behavior on the network and then assign a threat level to it. This will help keep the network running
+
+Objectives
+
+* We want to develop a system that uses SNN to find anomalies.
+
+* We want to find activities on the IoMT network.
+
+* We want to assign threat levels based on the anomalies we find.
+
+* We want to make data security and access control
+
+* We want to make the network use energy and last longer.
+
+Proposed Methodology
+
+Our system will collect data from IoMT devices. Get it ready for analysis. The SNN will learn what normal communication patterns look like and then find anomalies in time. If it finds something abnormal it will use a threat assignment module to figure out how bad the threat is and then take the security measures, such as blocking unauthorized nodes or allowing secure communication. We will also use energy- routing and secure authentication methods to make the system work better.
+
+Expected Outcomes
+
+* We expect our system to be really good at finding anomalies using SNN.
+
+* We expect the network to be more secure and private.
+
+* We expect the network to use energy.
+
+* We expect the network to last longer and be more reliable.
+
+Applications
+
+Our system can be used for healthcare monitoring, medical device security, hospital IoT networks, cybersecurity systems and Healthcare 5.0 environments.
+
+Our SNN-based anomaly detection and threat assignment system is a secure and energy-efficient solution, for IoMT networks. It will help find threats in time and make sure healthcare communication is safe and reliable. The IoMT network will be better. Patients will be safer.

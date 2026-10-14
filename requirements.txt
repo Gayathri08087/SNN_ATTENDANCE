@@ -1,0 +1,10 @@
+firebase-admin
+google-cloud-firestore
+opencv-contrib-python
+opencv-python
+numpy
+pandas
+torch
+torchvision
+pyserial
+requests
